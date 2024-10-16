@@ -20,7 +20,7 @@ body{
 .board{
   width: 500px;
   height: 500px;
-  background-color: aquamarine;
+  background-color: hsl(160, 84%, 81%);
   border: 1px solid black;
   display: flex;
   flex-direction: column;
@@ -46,7 +46,7 @@ body{
 }
 
 .square:active{
-  background-color: #64f4c4;
+  background-color: hsl(160, 84%, 70%);
 }
 
 .restartButton{

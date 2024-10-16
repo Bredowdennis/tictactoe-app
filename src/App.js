@@ -24,9 +24,15 @@ function App() {
   }, [board]);
 
   //called when the result is changed
+  //display result and show restart button
   useEffect(() => {
     if(result.state !== "none"){
+      if(result.state!== "Tie"){
       document.getElementById("playerResult").innerText = `Game Finished! Winning Player: ${result.winner}`;
+      }
+      else{
+        document.getElementById("playerResult").innerText = "Game Finished! Draw!"
+      }
       document.getElementById("restartButton").style.display = "block";
     }
     
